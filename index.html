@@ -1,0 +1,678 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="author" content="Sai Puppala">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      <meta property="og:title" content="About | Sai Puppala">
+      <title>Sai Puppala | Home</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- For icons -->
+    <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+	  <style>
+	   .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px auto;
+        }
+        .card-container ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px;
+			
+        }
+        .card-container li {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: calc(50% - 20px); /* Two cards per row */
+        }
+        .card-container li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+       
+        .card-container i {
+            font-size: 1.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .description {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+            padding: 1px;
+			padding-left: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .what {
+            font-size: 1.1em;
+            color: #3A5C2D;
+            margin-bottom: 1px;
+        }
+        .where {
+            font-size: 1em;
+            color: #555;
+        }
+        .where i {
+            color: #000000;
+        }
+		.scroll-container {
+			width: auto; /* You can specify a fixed width if desired */
+			height: 300px; /* Height of the scroll area */
+			overflow: auto; /* Enable manual scrolling */
+			border: 1px solid #ccc; /* Optional border */
+			position: relative;
+		}
+
+		.scroll-list {
+			/* Removed position: absolute and animation */
+		}
+
+		.list-item {
+			padding: 10px;
+			border-bottom: 1px solid #ccc; /* Optional item separator */
+			background-color: #ffffff; /* Optional background color */
+			font-size: 13px
+		}
+		.badge-primary {
+            background-color: #e0ffe0; /* Primary color */
+            color: black; /* Text color */
+            padding: 0.15em 0.5em; /* Padding for better appearance */
+            border-radius: 0.15rem; /* Rounded corners */
+			border: 1px solid black;
+        }
+
+/* Custom styles for the header */
+.custom-header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    background-color: #720000; /* Light background */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid green; /* Add a green bottom border */
+    padding: 0; /* Decrease top and bottom padding to reduce height */
+    height: 62px; /* Set a fixed height for the header */
+}
+
+.custom-header .navbar-brand {
+    padding: 0; /* Decrease padding for brand */
+    font-size: 18px; /* Keep the font size for the brand */
+    display: flex; /* Use flex to align logo and text */
+    align-items: center; /* Center items vertically */
+    margin-right: auto; /* Push navbar to the right */
+}
+
+.custom-header .navbar-brand img {
+    height: 62px; /* Adjust logo height */
+    width: 100%; /* Maintain aspect ratio */
+}
+
+.custom-header .navbar-nav {
+    display: flex; /* Use flex for navbar items */
+    margin-left: auto; /* Push the nav items to the right */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    flex-grow: 1; /* Allow nav to grow */
+}
+
+.custom-header .navbar-nav > li {
+    flex: 1; /* Allow each item to grow equally */
+    text-align: center; /* Center text within each li */
+    display: flex; /* Use flexbox for li to align items */
+    align-items: center; /* Center items vertically */
+}
+
+.custom-header .navbar-nav > li > a {
+    color: #ffffff; /* Dark text color */
+    font-size: 14px; /* Font size for nav links */
+    line-height: 80px; /* Align text vertically in the navbar */
+    padding: 0 10px; /* Add some horizontal padding */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Make the anchor fill the li */
+    align-items: center; /* Center items */
+    white-space: nowrap; /* Prevent text from wrapping */
+	margin-top: -40px; /* Move items up slightly */
+}
+
+.custom-header .navbar-nav > li > a > span {
+    display: flex; /* Use flex for icon and text */
+    align-items: center; /* Center items vertically */
+}
+
+.custom-header .navbar-nav > li > a > span i { /* Icon styling */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.custom-header .navbar-nav > li > a:hover {
+    color: #ffc107; /* Gold color on hover */
+}
+
+.custom-header .navbar-toggle {
+    background-color: transparent; /* Transparent background for the toggle button */
+    border: none; /* Remove border */
+    float: right; /* Move toggle button to the right */
+}
+
+.custom-header .navbar-toggle .icon-bar {
+    background-color: black; /* Black icon bars */
+}
+
+.navbar-nav li.active-new a {
+   background-color: #720000; /* Change to desired highlight color */
+	color: yellow;
+	height: 50px; /* Set the desired height */
+    line-height: 50px; /* Center text vertically */
+	
+}
+
+.flex-container {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+.certification-container {
+    overflow-x: hidden; /* Hide horizontal scroll by default */
+    white-space: nowrap; /* Prevent images from wrapping to the next line */
+    padding: 10px 0; /* Add some vertical padding */
+    transition: overflow-x 0.3s ease; /* Smooth transition for overflow */
+}
+
+.certification-container:hover {
+    overflow-x: auto; /* Enable horizontal scrolling on hover */
+}
+
+.certification-images {
+    display: inline-block; /* Allows the container to shrink to fit the images */
+}
+
+.cert-logo {
+    height: 100px; /* Set a height for the images */
+    margin-right: 10px; /* Space between images */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Adjust width as needed */
+    max-width: 700px; /* Maximum width */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: lightgray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+   <nav id="topNav" class="navbar navbar-default custom-header">
+		   <a class="navbar-brand" href="#"><span>
+					<img src="images/siu_logo.png"/>
+					</span></a>
+        <div class="container">
+           
+        <div class="collapse navbar-toggleable-sm" id="navbar">
+
+ 
+			
+            <ul class="nav navbar-nav navbar-right"> 
+				<li class="active-new"><a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i> <b>Home</b></span></a></li>
+				<li><a href="publication.html"><span><i class="fa fa-flask" aria-hidden="true"></i> <b>Publications</b></span></a></li>
+				<li><a href=""><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> <b>Current Works</b></span></a></li>
+				<li><a href=""><span><i class="fa fa-newspaper-o" aria-hidden="true"></i> <b>As Reviewer</b></span></a></li>
+				<li><a href=""><span><i class="fa fa-star" aria-hidden="true"></i> <b>Recognitions</b></span></a></li>
+				<li><a href="https://scholar.google.com/citations?user=VjEGZJoAAAAJ"><span><i class="fa fa-google" aria-hidden="true"></i> <b>Google Scholar</b></span></a></li>
+			</ul>
+
+        </div>
+    </div>
+
+    </nav>
+	
+	
+	
+	
+   
+
+
+    
+
+<div class="container-fluid">
+
+		<!-- Left Column -->
+		<div class="col-sm-3">
+
+			<!-- List-Group Panel -->
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title">
+					<img class="img-responsive" alt="Sai Puppala" src="images/profile.jpg" width="100%" />
+					</h5>
+				</div>
+				<h5 style="text-align: center;"><strong><i>Sai Puppala</i></strong></h5>
+				<div class="card-text">
+					<b>Senior Data Engineer/Ph.D Student</b>
+					<br><b>Researcher</b>, <a href="https://www2.cs.siu.edu/~stalukder/supremelab/index.html"><b>S</b>ec<b>u</b>rity and <b>Pr</b>ivacy <b>E</b>nhanced <b>M</b>achine L<b>e</b>arning Lab</a>
+                     <br>Engineering A0407, School of Computing
+                     <br>Southern Illinois University
+                     <br><i class="fa fa-phone" aria-hidden="true"></i> (618) 453-6059
+                     <br><i class="fa fa-envelope" aria-hidden="true"></i> <a href="https://www2.cs.siu.edu/~stalukder/mailto:saimaniteja.puppala@siu.edu">saimaniteja.puppala@siu.edu</a>
+
+				</div>
+				<hr>
+				<div class="card-container">
+    
+    </div>
+				
+			</div>
+
+			<!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title"><i class="fa fa-cog" aria-hidden="true"></i> Witty Quote</h5>
+				</div>
+
+				<div class="card-block">
+					<p class="card-text">“By far, the greatest danger of Artificial Intelligence is that people conclude too early that they understand it." – Eliezer Yudkowsky</p>
+				</div>
+			</div>
+				
+		</div><!--/Left Column-->
+  
+  
+		<!-- Center Column -->
+		<div class="index-col-sm-6">
+		
+			<!-- Alert -->
+			<div class="alert alert-success alert-dismissible" role="alert">
+			<h5><i>Introduction</i></h5>
+			</div>		
+		
+			<!-- Articles -->
+			<div class="row">
+				<div class="bio">
+            Sai Puppala is a Ph.D. student at Southern Illinois University Carbondale and a member of the Data Science team at a leading corporate organization. His expertise includes Big Data, Machine Learning, Parallel Processing, and Cloud Services. Previously, as a Data Scientist, he contributed to notable projects such as Google CP.
+
+With extensive experience across various domains—including Financial Services, Retail, Cloud Services, Transportation, and Manufacturing—he holds certifications as a Solutions Architect and Data Engineer. His passion for Big Data and Machine Learning drives him to continuously explore innovations in these fields.
+
+Proficient in multiple programming languages and technologies, Sai's skill set encompasses C, C++, Java, .NET, Python, Hive, Hadoop, Spark, NoSQL, SQL Server, Oracle, R, Impala, HBase, SAS, Tableau, and Perl. He has also earned certifications in Big Data Analytics from esteemed institutions such as Columbia University, MIT, Harvard University, Microsoft, and IIT Hyderabad.
+
+His research focuses on the intersection of Big Data, Networking, Security, and the adaptability of Machine Learning. He aims to address challenges at the convergence of Big Data and Security through advanced Machine Learning and Deep Learning methodologies, ensuring effective real-world applications.
+
+<p>ave authored over eighty (80) peer-reviewed publications in reputed journals and top-tier conferences including ACM TSC, Nature Scientific Reports, ANS Transactions, ASONAM, ACM SAC, ICWSM, ACM CHI, ACM WebSci, IEEE DSC, and my research has received media attention from many news outlets including prominent national and international outlets. NBC 6 has featured my research as a sweeps prime-time story and Sage Research Methods based on UK has made my research methods available to academic libraries for subscription or purchase aimed at helping students and early career researchers. I am the recipient of several research travel grants and have been invited by Facebook Research to their HQ. My paper has won best paper award on multiple occasions.</p>
+            </div>
+			</div>
+			
+			
+			<hr>      
+				<div class="row">
+				<h5><i>Research updates</i></h5>
+            <div class="scroll-container">
+				<div class="scroll-list">
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Three</b> of our papers got accepted in one of the reputed conference <b><span style="color: #3A5C2D;">COMPSAC 2024</span></b> <span class="badge badge-primary">Acceptance Rate: <b>22%</b></span></div> 
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i>  One of my paper got accepted in <b><span style="color: #3A5C2D;">ICMLA 2024</span></b> Conference <span class="badge badge-primary">Acceptance Rate: <b>18%</b></span></div>
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Four</b> of our papers got accepted in one of the reputed conferences in social networks <b><span style="color: #3A5C2D;">ASONAM 2024</span></b></div>
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> Served as Meta Reviewer for Conference <b><span style="color: #3A5C2D;">PacificVis 2025</span></b></div>
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Seven</b> of our book chapters got published in the book "Data-driven approaches to Medical Imaging" by <b><span style="color: #3A5C2D;">Springer.</span></b></div>
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Three</b> of our papers got accepted in <b><span style="color: #3A5C2D;">ACM/IEEE ASONAM 2023</span></b>, one of the top tier conferences in social network analysis.</div>
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>One</b> of our paper got accepted in <b><span style="color: #3A5C2D;">ICWSM 2024</span></b>, one of the top tier conferences in Social Media <span class="badge badge-primary">Acceptance Rate: <b>12%</b></div>
+					
+					
+					<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Three</b> of our papers got accepted in <b><span style="color: #3A5C2D;">ANS 2024</span></b>, one of the top tier Journals in Nuclear Sceince.</div>
+				</div>
+			</div>
+			</div>
+			<br/>
+		<div class="row">
+    <h5><i>Recent Certifications</i></h5>
+    <div class="certification-container">
+        <div class="certification-images">
+            <img src="images/databricks.png" alt="Databricks Logo" class="cert-logo" onclick="openModal('images/databricks.png')">
+            <img src="images/datacamp.png" alt="Datacamp Logo" class="cert-logo" onclick="openModal('images/datacamp.png')">
+            <img src="images/databricks.png" alt="Databricks Logo" class="cert-logo" onclick="openModal('images/databricks.png')">
+            <img src="images/datacamp.png" alt="Datacamp Logo" class="cert-logo" onclick="openModal('images/datacamp.png')">
+            <img src="images/databricks.png" alt="Databricks Logo" class="cert-logo" onclick="openModal('images/databricks.png')">
+            <img src="images/datacamp.png" alt="Datacamp Logo" class="cert-logo" onclick="openModal('images/datacamp.png')">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Modal Structure -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+
+
+			      
+
+			
+  
+			
+			<hr>
+			
+			<div class="row">
+				<h5>Professional Experience</h5>
+            <ul class="ul-dates">
+               <li>
+                  <div class="content">
+                     <b>Senior Software Engineer</b> (August 2024 - Current)<br><span class = "duration"></span>
+                     <div>John Deere At World Headquaters
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="content">
+                     <b>Assistant Professor</b><br><span class = "duration">(June 2021 - July 2024)</span>
+                     <div>Southern Illinois University
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="content">
+                     <b>Assistant Professor</b><br><span class = "duration">(May 2019 - May 2021)</span>
+                     <div>Pennsylvania Western University
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="content">
+                     <b>Graduate Research/Teaching Assistant</b><br><span class = "duration">(Aug 2014 - Apr 2019)</span>
+                     <div>Florida International University
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="content">
+                     <b>Software Engineer, Intern</b><br><span class = "duration">(Oct 2013 - Jan 2014)</span>
+                     <div>Samsung R&D Institute, Bangladesh
+                     </div>
+                  </div>
+               </li>
+               <li>
+                  <div class="content">
+                     <b>Software Engineer, Intern</b><br><span class = "duration">(Jan 2012 - Jan 2013)</span>
+                     <div>Ministry of Foreign Affairs, Bangladesh
+                     </div>
+                  </div>
+               </li>
+            </ul>
+			</div>
+			<br/>
+
+		</div><!--/Center Column-->
+
+
+	  <!-- Right Column -->
+	  <div class="col-sm-3">
+
+			
+			<!-- Form --> 
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title">
+						
+						Recognitions
+					</h5>
+				</div>
+				<div class="card-block">
+                    <i class="fa fa-trophy" aria-hidden="true"></i> Featured in Illinois News for Securing <b>16th</b> Place Nationwide and <b>4th</b> Statewide in 2022 <b><span style="color: #3A5C2D;">Cyber Force Competition</span></b>
+				</div>
+				<div class="card-block">
+                    <i class="fa fa-trophy" aria-hidden="true"></i> Won the <b>Outstanding Reviewer Award</b> in reputed conferences Automotive UI 2024 and CHI 2025 Conferences
+				</div>
+				<div class="card-block">
+                    <i class="fa fa-trophy" aria-hidden="true"></i> Nominated for the 2020 <b><span style="color: #3A5C2D;">Brain T.Milbrant Memorial Award</span></b> for Academic Execellence.
+				</div>
+				<div class="card-block">
+                    <i class="fa fa-trophy" aria-hidden="true"></i> Earned a prestigious <b>full scholarship</b> to pursue a Master’s degree at the University of Illinois
+				</div>
+				
+			</div>
+			
+			<!-- Form --> 
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title">
+						
+						Education
+					</h5>
+				</div>
+				<div class="card-block">
+							<ul class="ul-card">
+               <li>
+                    <div class="description">
+                     <div class="what">
+					 <i class="fa fa-university" aria-hidden="true"></i> 
+					 <b>Ph.D. - Southern Illinois University</b></div>
+					 
+					<hr>
+                     <div class="where"><b>Dissertation: </b><br/>Dynamic Adaptive Framework for Sustainable Federated Learning in Resource-Constrained Heterogeneous Environments  
+                     </div>
+					 
+					 <hr>
+					
+                  </div>
+               </li>
+
+               <li>
+                    <div class="description">
+					<hr>
+                     <div class="what">
+					 <i class="fa fa-university" aria-hidden="true"></i> 
+					 <b>M.Sc. - University of Illinois</b></div>
+					  
+					  <hr>
+                     <div class="where"><b>Thesis: </b><br/>High-Risk Zip Code Identification for Lead Poisoning Through Predictive Analysis of Environmental Factors
+										
+                        
+                     </div>
+					 <hr>
+					
+                  </div>
+               </li>
+
+               <li>
+                    <div class="description">
+					<hr>
+                     <div class="what">
+					 <i class="fa fa-university" aria-hidden="true"></i> 
+					 <b>B.Sc. - Jawaharlal Nehru University</b></div>
+					 
+					 <hr>
+                     <div><b>Thesis: </b><br/>Advancements in Ad-hoc Sensor Networks and Their Role in Enhancing Big Data-Driven Malware Detection Techniques
+                       
+                     </div>
+					 <hr>
+					
+                  </div>
+               </li>
+            </ul>
+					</div>
+			</div>
+			
+			
+
+ <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+
+	  </div><!--/Right Column -->
+	</div><!--/container-fluid-->
+	
+	<footer>
+		    <div class="small-print">
+        	<div class="container">
+        		
+        		<p>Copyright &copy; Sai puppala </p>
+        	</div>
+        </div>
+	</footer>
+
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 JavaScript. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script> 
+    
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	
+	<script>
+	
+	let currentIndex = 0; // Current index of the displayed image
+const images = document.querySelectorAll('.cert-logo'); // Get all images
+
+function scrollImages(direction) {
+    const imageCount = images.length;
+    
+    // Update the current index based on direction
+    currentIndex += direction;
+    
+    // Loop around if we go out of bounds
+    if (currentIndex < 0) {
+        currentIndex = imageCount - 1; // Go to the last image
+    } else if (currentIndex >= imageCount) {
+        currentIndex = 0; // Go to the first image
+    }
+    
+    // Scroll to the current image
+    const offset = -currentIndex * (images[0].offsetWidth + 20); // 20 is the margin
+    document.querySelector('.certification-images').style.transform = `translateX(${offset}px)`;
+}
+
+function openModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImage.src = imageSrc;
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
+// Close the modal when clicking outside of the image
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "See more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "See less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+	
+</body>
+
+</html>
