@@ -1,0 +1,417 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="author" content="Sai Puppala">
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      <meta property="og:title" content="About | Sai Puppala">
+      <title>Sai Puppala | Publications</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap 4 CSS. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- For icons -->
+    <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+	  <style>
+	   .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px auto;
+        }
+        .card-container ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px;
+			
+        }
+        .card-container li {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: calc(50% - 20px); /* Two cards per row */
+        }
+        .card-container li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+       
+        .card-container i {
+            font-size: 1.5em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .description {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+            padding: 1px;
+			padding-left: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .what {
+            font-size: 1.1em;
+            color: #3A5C2D;
+            margin-bottom: 1px;
+        }
+        .where {
+            font-size: 1em;
+            color: #555;
+        }
+        .where i {
+            color: #000000;
+        }
+		.scroll-container {
+			width: auto; /* You can specify a fixed width if desired */
+			height: 300px; /* Height of the scroll area */
+			overflow: auto; /* Enable manual scrolling */
+			border: 1px solid #ccc; /* Optional border */
+			position: relative;
+		}
+
+		.scroll-list {
+			/* Removed position: absolute and animation */
+		}
+
+		.list-item {
+			padding: 10px;
+			border-bottom: 1px solid #ccc; /* Optional item separator */
+			background-color: #ffffff; /* Optional background color */
+			font-size: 13px
+		}
+		.badge-primary {
+            background-color: #ebe9f5; /* Primary color */
+            color: black; /* Text color */
+            padding: 0.15em 0.5em; /* Padding for better appearance */
+            border-radius: 0.15rem; /* Rounded corners */
+			border: 1px solid black;
+        }
+
+.badge1-primary {
+            background-color: #ffe0e3; /* Primary color */
+            color: black; /* Text color */
+            padding: 0.15em 0.5em; /* Padding for better appearance */
+            border-radius: 0.15rem; /* Rounded corners */
+			border: 1px solid black;
+        }
+		
+/* Custom styles for the header */
+.custom-header {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    background-color: #720000; /* Light background */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid green; /* Add a green bottom border */
+    padding: 0; /* Decrease top and bottom padding to reduce height */
+    height: 62px; /* Set a fixed height for the header */
+}
+
+.custom-header .navbar-brand {
+    padding: 0; /* Decrease padding for brand */
+    font-size: 18px; /* Keep the font size for the brand */
+    display: flex; /* Use flex to align logo and text */
+    align-items: center; /* Center items vertically */
+    margin-right: auto; /* Push navbar to the right */
+}
+
+.custom-header .navbar-brand img {
+    height: 62px; /* Adjust logo height */
+    width: 100%; /* Maintain aspect ratio */
+}
+
+.custom-header .navbar-nav {
+    display: flex; /* Use flex for navbar items */
+    margin-left: auto; /* Push the nav items to the right */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    flex-grow: 1; /* Allow nav to grow */
+}
+
+.custom-header .navbar-nav > li {
+    flex: 1; /* Allow each item to grow equally */
+    text-align: center; /* Center text within each li */
+    display: flex; /* Use flexbox for li to align items */
+    align-items: center; /* Center items vertically */
+}
+
+.custom-header .navbar-nav > li > a {
+    color: #ffffff; /* Dark text color */
+    font-size: 14px; /* Font size for nav links */
+    line-height: 80px; /* Align text vertically in the navbar */
+    padding: 0 10px; /* Add some horizontal padding */
+    text-decoration: none; /* Remove underline from links */
+    display: flex; /* Make the anchor fill the li */
+    align-items: center; /* Center items */
+    white-space: nowrap; /* Prevent text from wrapping */
+	margin-top: -40px; /* Move items up slightly */
+}
+
+.custom-header .navbar-nav > li > a > span {
+    display: flex; /* Use flex for icon and text */
+    align-items: center; /* Center items vertically */
+}
+
+.custom-header .navbar-nav > li > a > span i { /* Icon styling */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.custom-header .navbar-nav > li > a:hover {
+    color: #ffc107; /* Gold color on hover */
+}
+
+.custom-header .navbar-toggle {
+    background-color: transparent; /* Transparent background for the toggle button */
+    border: none; /* Remove border */
+    float: right; /* Move toggle button to the right */
+}
+
+.custom-header .navbar-toggle .icon-bar {
+    background-color: black; /* Black icon bars */
+}
+
+.navbar-nav li.active-new a {
+   background-color: #720000; /* Change to desired highlight color */
+	color: yellow;
+	height: 50px; /* Set the desired height */
+    line-height: 50px; /* Center text vertically */
+	
+}
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+   <nav id="topNav" class="navbar navbar-default custom-header">
+		   <a class="navbar-brand" href="#"><span>
+					<img src="images/siu_logo.png"/>
+					</span></a>
+        <div class="container">
+           
+        <div class="collapse navbar-toggleable-sm" id="navbar">
+
+ 
+			
+            <ul class="nav navbar-nav navbar-right"> 
+				<li><a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i> <b>Home</b></span></a></li>
+				<li><a href="publication.html"><span><i class="fa fa-flask" aria-hidden="true"></i> <b>Publications</b></span></a></li>
+				<li><a href=""><span><i class="fa fa-book" aria-hidden="true"></i> <b>Current Works</b></span></a></li>
+				<li><a href="service.html"><span><i class="fa fa-user" aria-hidden="true"></i> <b>Service</b></span></a></li>
+				<li class="active-new"><a href="recognitions.html"><span><i class="fa fa-star" aria-hidden="true"></i> <b>Recognitions</b></span></a></li>
+				<li><a href="https://scholar.google.com/citations?user=VjEGZJoAAAAJ"><span><i class="fa fa-link" aria-hidden="true"></i> <b>Google Scholar</b></span></a></li>
+			</ul>
+
+        </div>
+    </div>
+
+    </nav>
+
+<div class="container-fluid">
+
+		<!-- Left Column -->
+		<div class="col-sm-3">
+
+			<!-- List-Group Panel -->
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title">
+					<img class="img-responsive" alt="Sai Puppala" src="images/profile.jpg" width="100%" />
+					</h5>
+				</div>
+				<h5 style="text-align: center;"><strong><i>Sai Puppala</i></strong></h5>
+				<div class="card-text">
+					<b>Senior Data Engineer/Ph.D Student</b>
+					<br><b>Researcher</b>, <a href="https://www2.cs.siu.edu/~stalukder/supremelab/index.html"><b>S</b>ec<b>u</b>rity and <b>Pr</b>ivacy <b>E</b>nhanced <b>M</b>achine L<b>e</b>arning Lab</a>
+                     <br>Engineering A0407, School of Computing
+                     <br>Southern Illinois University
+                     <br><i class="fa fa-phone" aria-hidden="true"></i> (618) 453-6059
+                     <br><i class="fa fa-envelope" aria-hidden="true"></i> <a href="https://www2.cs.siu.edu/~stalukder/mailto:saimaniteja.puppala@siu.edu">saimaniteja.puppala@siu.edu</a>
+
+				</div>
+				<hr>
+				<div class="card-container">
+    
+    </div>
+				
+			</div>
+
+			<!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title"><i class="fa fa-cog" aria-hidden="true"></i> Witty Quote</h5>
+				</div>
+
+				<div class="card-block">
+					<p class="card-text">“By far, the greatest danger of Artificial Intelligence is that people conclude too early that they understand it." – Eliezer Yudkowsky</p>
+				</div>
+			</div>
+				
+		</div><!--/Left Column-->
+		  
+  
+		<!-- Center Column -->
+		<div class="col-sm-6">
+		
+			<!-- Alert -->
+					
+		
+			 <div id="main">
+            <a name="TemplateInfo"></a>
+                                    
+                                    <h5 class="title"><i>Academic and Professional Recognitions</i></h5>
+
+                                                                      
+
+
+                                        <div id="jaward">
+                                            <div class="contentText">
+				  								<h6><strong><i>Highlights</i></strong></h6>
+											</div>
+				<br/>
+<ul>
+<li>
+        <img src="./images/award.png" width="2%" height="2%"> 
+        <font size="+0.5"> Nominated for the 2020 <i><u>Brain T. Milbrandt Memorial Award for Academic and Professional Excellence</u></i>, recognizing outstanding contributions to the field
+    </li>
+	
+	<hr>
+
+	<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Featured in <i><u>Illinois News</i></u> for achieving 16th place nationwide and 4th place statewide in the 2022 <i><u>Cyber Force Competition</i></u>.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Received <i><u>Outstanding Reviewer</u></i> recognition in top-rated conferences <i><u>Automotive UI 2024, Mensch und Computer 2024</u></i>.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Honored with the <i><u>2024 After Market Customer Support Vice President Award</u></i> from John Deere for our Product Service Center.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Honored with the <i><u>2024 CIO Global IT Impact Award</i></u> from John Deere for our Product Service Guru.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Honored with the <i><u>2024 Presidents Award</u></i> from John Deere for our Product Service Center.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Awarded a <i><u>prestigious scholarship</i></u> to pursue a Master’s degree at the University of Illinois.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Global IT recognitions from <i><u>Engineering Manager, Product Manager, Senior Software Engineers</i></u> in John Deere.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Selected to present in <i><u>Business Insights and Analytics</i></u> at the John Deere Conference for <u><i>Advance RAG Application</u></i>.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Received the <i><u>2024 GPSC Professional Development Award</i></u> from Southern Illinois University at Carbondale.
+</li>
+<hr>
+<li>
+    <img src="./images/award.png" width="2%" height="2%">
+    <font size="+0.5"> Selected as one of the presenters for John Deere’s prestigious <i><u>Global IT Tech Day Conference 2024</i></u>.
+</li>
+<hr>
+
+   
+</ul>
+
+
+</div>
+                                                
+
+
+						
+           
+</div>
+			
+		</div><!--/Center Column-->
+
+
+	  <!-- Right Column -->
+
+
+	</div><!--/container-fluid-->
+	
+	<footer>
+		
+        
+        <div class="small-print">
+        	<div class="container">
+        		<p>Copyright &copy; Sai puppala </p>
+        	</div>
+        </div>
+	</footer>
+
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 4 JavaScript. This is for the alpha 3 release of Bootstrap 4. This should be updated when Bootstrap 4 is officially released. -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script> 
+    
+	<!-- Placeholder Images -->
+	<script src="js/holder.min.js"></script>
+	
+</body>
+
+</html>
