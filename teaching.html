@@ -201,7 +201,25 @@
 }
 
 
-
+.social-icons {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the icons horizontally */
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        .social-icons li {
+            margin: 10px; /* Space between icons */
+        }
+        .social-icons a {
+            text-decoration: none; /* Remove underline */
+            color: #000; /* Default icon color */
+            font-size: 20px; /* Icon size */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .social-icons a:hover {
+            color: #0077b5; /* Change color on hover */
+        }
 
     </style>
 
@@ -255,10 +273,16 @@
 
 				</div>
 				<hr>
-				<div class="card-container">
-    
-    </div>
-				
+				<div class="card-text">
+					<ul class="social-icons">
+					 <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="https://scholar.google.com" target="_blank"><i class="fas fa-book-reader"></i></a></li>
+					<li><a href="https://orcid.org" target="_blank"><i class="fab fa-orcid"></i></a></li>
+					<li><a href="https://www.researchgate.net" target="_blank"><i class="fab fa-researchgate"></i></a></li>
+					<li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+					</div>
 			</div>
 
 			<!-- Text Panel -->
@@ -295,7 +319,7 @@
 <ul>
 <li>
        <img src="./images/journal.png" width="2%" height="2%"> 
-       <span class="badge badge1-primary">2024-2025</b></span>  <b>CS508 - Generative Artificial Intelligence</b>
+         <b>CS508 - Generative Artificial Intelligence</b> <span class="badge badge1-primary">2024-2025</span>
 	   <li><i class="fas fa-user-shield"></i> &nbsp Corporate Trainer - John Deere University at Moline, IL</li>
 		<p><ul>
     <li><i class="fas fa-arrow-right"></i> Introduction to Generative AI</li>
@@ -330,9 +354,8 @@
 <ul>
 
 <li>
-	
-    <img src="./images/journal.png" width="2%" height="2%"> 
-    <span class="badge badge-primary">2022-2023</span> <b>CS440 - Ethical Hacking </b>
+	<img src="./images/journal.png" width="2%" height="2%"> 
+     <b>CS440 - Ethical Hacking </b> <span class="badge badge-primary">2022-2023</span>
 	<li><i class="fas fa-user-shield"></i> &nbsp Teaching Assistant(v) - Southern Illinois University at Carbondale, IL</li>
 	
     <p>
@@ -360,7 +383,7 @@
    <li>
 	
     <img src="./images/journal.png" width="2%" height="2%"> 
-    <span class="badge badge-primary">2015-2018</span> <b>CS400 - Big Data Cloud Services </b>
+    <b>CS400 - Big Data Cloud Services </b> <span class="badge badge-primary">2015-2018</span> 
 	<li><i class="fas fa-user-shield"></i> &nbsp Course Trainer - Yaaltech Institute, Hyderabad, IN</li>
 	
     <p>
@@ -388,7 +411,7 @@
    <li>
 	
     <img src="./images/journal.png" width="2%" height="2%"> 
-    <span class="badge badge-primary">2015-2018</span> <b>CS200 -  Introduction to Programming </b>
+     <b>CS200 -  Introduction to Programming </b> <span class="badge badge-primary">2015-2018</span>
 	<li><i class="fas fa-user-shield"></i> &nbsp Course Trainer - Yaaltech Institute, Hyderabad, IN</li>
 	
     <p>

@@ -260,7 +260,25 @@ body {
 }
 
 
-
+ .social-icons {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the icons horizontally */
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        .social-icons li {
+            margin: 10px; /* Space between icons */
+        }
+        .social-icons a {
+            text-decoration: none; /* Remove underline */
+            color: #000; /* Default icon color */
+            font-size: 20px; /* Icon size */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .social-icons a:hover {
+            color: #0077b5; /* Change color on hover */
+        }
 
 
     </style>
@@ -323,16 +341,25 @@ body {
 
 				</div>
 				<hr>
-				<div class="card-container">
-    
-    </div>
+					<div class="card-text">
+					<ul class="social-icons">
+					 <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="https://scholar.google.com" target="_blank"><i class="fas fa-book-reader"></i></a></li>
+					<li><a href="https://orcid.org" target="_blank"><i class="fab fa-orcid"></i></a></li>
+					<li><a href="https://www.researchgate.net" target="_blank"><i class="fab fa-researchgate"></i></a></li>
+					<li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+					</div>
+			
+
 				
 			</div>
 			
 			<!-- Text Panel -->
 			<div class="card">
 				<div class="card-header p-b-0">
-					<h5 class="card-title"><i class="fa fa-search" aria-hidden="true"></i> Research Interests</h5>
+					<h5 class="card-title"> Research Interests</h5>
 				</div>
 
 				<div class="card-block">
@@ -341,10 +368,12 @@ body {
         <p><strong>Social Networks - </strong>
         AI and machine learning can significantly enhance the user experience within social networks. Given our daily reliance on various social platforms, user-generated posts, comments, and reactions serve as valuable resources for research purposes. Investigating social networks can lead to innovative insights into user data security and privacy, ultimately delivering novel user experiences.</p>
     </li>
+	<hr>
     <li>
         <p><strong>Health Care - </strong>
         AI has the ability to analyze big data sets – pulling together patient insights and leading to predictive analysis. Quickly obtaining patient insights helps the healthcare ecosystem discover key areas of patient care that require improvement. Wearable healthcare technology also uses AI to better serve patients.</p>
     </li>
+	<hr>
     <li>
         <p><strong>Security Enhancements - </strong>
         AI uses machine learning and deep learning to recognize patterns on the network and cluster them; it will then detect deviations or security incidents from the norm before responding to them. These patterns can help to improve security in the future. Similar potential threats can be detected and blocked early enough.</p>

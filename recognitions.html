@@ -200,7 +200,25 @@
 	
 }
 
-
+.social-icons {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the icons horizontally */
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        .social-icons li {
+            margin: 10px; /* Space between icons */
+        }
+        .social-icons a {
+            text-decoration: none; /* Remove underline */
+            color: #000; /* Default icon color */
+            font-size: 20px; /* Icon size */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+        .social-icons a:hover {
+            color: #0077b5; /* Change color on hover */
+        }
 
 
     </style>
@@ -255,9 +273,16 @@
 
 				</div>
 				<hr>
-				<div class="card-container">
-    
-    </div>
+					<div class="card-text">
+					<ul class="social-icons">
+					 <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+					<li><a href="https://scholar.google.com" target="_blank"><i class="fas fa-book-reader"></i></a></li>
+					<li><a href="https://orcid.org" target="_blank"><i class="fab fa-orcid"></i></a></li>
+					<li><a href="https://www.researchgate.net" target="_blank"><i class="fab fa-researchgate"></i></a></li>
+					<li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+					</div>
 				
 			</div>
 
