@@ -200,7 +200,22 @@
 			border: 1px solid black;
         }
 		
+ .highlight {
+        animation: highlight-animation 1s infinite alternate;
+        padding: 5px 10px; /* Adjust padding for better appearance */
+        border-radius: 5px; /* Rounded corners */
+    }
 
+    @keyframes highlight-animation {
+        from {
+            background-color: rgba(0, 123, 255, 0.5); /* Initial highlight color */
+            color: white; /* Font color */
+        }
+        to {
+            background-color: rgba(0, 123, 255, 1); /* Final highlight color */
+            color: white; /* Font color */
+        }
+    }
 
     </style>
 
@@ -220,7 +235,7 @@
            <ul class="nav navbar-nav navbar-right"> 
 				<li><a href="index.html"><span><i class="fa fa-home" aria-hidden="true"></i> <b>Home</b></span></a></li>
 				<li class="active-new"><a href="publication.html"><span><i class="fa fa-flask" aria-hidden="true"></i> <b>Publications</b></span></a></li>
-				<li><a href=""><span><i class="fa fa-book" aria-hidden="true"></i> <b>Current Works</b></span></a></li>
+				<li><a href="teaching.html"><span><i class="fa fa-book" aria-hidden="true"></i> <b>Teaching</b></span></a></li>
 				<li><a href="service.html"><span><i class="fa fa-user" aria-hidden="true"></i> <b>Service</b></span></a></li>
 				<li><a href="recognitions.html"><span><i class="fa fa-star" aria-hidden="true"></i> <b>Recognitions</b></span></a></li>
 				<li><a href="https://scholar.google.com/citations?user=VjEGZJoAAAAJ"><span><i class="fa fa-link" aria-hidden="true"></i> <b>Google Scholar</b></span></a></li>
@@ -284,29 +299,54 @@
             <a name="TemplateInfo"></a>
                                     
                                     <h5 class="title"><i>Selected Publications</i></h5>
-
-                                 <div id="jpaper">
+									
+									    <div id="jpaper">
                                             <div class="contentText">
-				  								<h6><strong><i>Overview of Current Research work</i></strong></h6>
+				  								<h6><strong><i>Current Work in Progress</i></strong></h6>
 											</div>
 				<br/>
 <ul>
     <li>
+        <img src="./images/wip.png" width="1.7%" height="2%"> &nbsp;
+        <b><span class="badge badge-primary highlight">Now</span></b> Working on Research paper - "A Bayesian Gaussian Approach to Personalized Federated Learning through Dynamic-UMAP enhanced Variational Interference"
+    </li>
+    <hr>
+    <li>
+        <img src="./images/wip.png" width="1.7%" height="2%">  &nbsp;
+        <b><span class="badge badge-primary highlight">Now</span></b> Working on Research paper - "Survey on Advances in Federated Learning for Resource-Constrained IoT Devices with LEO Satellite Integration"
+    </li>
+    <hr>
+</ul>
+
+
+
+</div>
+
+                                 <div id="jpaper">
+                                            <div class="contentText">
+				  								<h6><strong><i>Overview of Pending Publication work</i></strong></h6>
+											</div>
+				<br/>
+<ul>
+ <li>
     <img src="./images/current.png" width="1.7%" height="2%"> &nbsp;
-     <b><span class="badge badge1-primary">2024</span> </b> Paper "A Visual Approach to Tracking Emotional Sentiment Dynamics in Social Network Commentaries" has been accepted for publication at the 18th International AAAI Conference on Web and Social Media (<u>ICWSM 2024</u>)
-    [<a href="https://scholar.google.com/scholar?q=A%20Visual%20Approach%20to%20Tracking%20Emotional%20Sentiment%20Dynamics%20in%20Social%20Network%20Commentaries" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>] 
-    <span class="badge badge-primary">Acceptance Rate: <b>22%</b></span> 
+     <b><span class="badge badge1-primary">2025</span> </b> Paper "Leveraging Large Language Models for Security Assessment in the Network of Devices in Nuclear Power Plants" has been accepted for publication for American Nuclear Society - HMIT
+</li>
+<hr>
+    <li>
+    <img src="./images/current.png" width="1.7%" height="2%"> &nbsp;
+     <b><span class="badge badge1-primary">2025</span> </b> Paper "Privacy-Aware Cyber Attack Detection Framework for Advanced Reactors Using Data Fusion and Quantum Deep Learning" has been accepted for publication for American Nuclear Society - HMIT
 </li>
 
     <hr>
     <li>
         <img src="./images/current.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "Adaptive Machine Learning-Based Threat Intelligence in Nuclear Facilities (AML-TIN): A Framework for Enhanced Cybersecurity in Nuclear Computing Environments" has been accepted for publication in  (<u>Transactions of the American Nuclear Society</u>) [<a href="https://scholar.google.com/scholar?q=Adaptive%20Machine%20Learning-Based%20Threat%20Intelligence%20in%20Nuclear%20Facilities%20(AML-TIN)%3A%20A%20Framework%20for%20Enhanced%20Cybersecurity%20in%20Nuclear%20Computing%20Environments" target="_blank"  style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2025</span></b> Paper "Secure Anomaly Detection in Advanced Reactor through Quantum Federated Learning with Advanced Cryptography" has been accepted for publication for American Nuclear Society - HMIT
     </li>
     <hr>
     <li>
         <img src="./images/current.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "SocialGuard: Bangla Text-Based Gender Identification for Enhancing Integrity in Social Networks" has been accepted for publication at the 48th IEEE International Conference on Computers, Software, and Applications (<u>COMPSAC 2024</u>)  [<a href="https://scholar.google.com/scholar?q=SocialGuard%3A%20Bangla%20Text-Based%20Gender%20Identification%20for%20Enhancing%20Integrity%20in%20Social%20Networks" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2025</span></b> Paper "Towards Secure and Efficient Farming using Federated Learning with Decentralized Aggregation Protocols in Dynamic Network Conditions" has been accepted for publication at the MDPI Agriculture
     </li>
     <hr>
     
@@ -428,11 +468,7 @@
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
          <b><span class="badge badge1-primary">2024</span></b> Paper "Generative adversarial networks for data augmentation" has been accepted for publication in Data Driven Approaches on Medical Imaging  [<a href="https://scholar.google.com/scholar?q=Generative%20adversarial%20networks%20for%20data%20augmentation" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
-    <hr>
-    <li>
-        <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "Case studies on x-ray imaging, MRI and nuclear imaging" has been accepted for publication in Data Driven Approaches on Medical Imaging  [<a href="https://scholar.google.com/scholar?q=Case%20studies%20on%20x-ray%20imaging%2C%20MRI%20and%20nuclear%20imaging" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
-    </li>
+   
     <hr>
     <li>
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
@@ -443,25 +479,30 @@
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
          <b><span class="badge badge1-primary">2024</span></b> Paper "Monitoring Dynamics of Emotional Sentiment in Social Network Commentaries" has been accepted for publication at the 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (<u>ASONAM</u>)  [<a href="https://scholar.google.com/scholar?q=Monitoring%20Dynamics%20of%20Emotional%20Sentiment%20in%20Social%20Network%20Commentaries" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
-    <hr>
+	 <hr>
     <li>
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "Combating Identity Attacks in Online Social Networks: A Multi-Layered Framework Using Zero-Knowledge Proof and Permissioned Blockchain" has been accepted for publication at the 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (<u>ASONAM</u>)  [<a href="https://scholar.google.com/scholar?q=Combating%20Identity%20Attacks%20in%20Online%20Social%20Networks%3A%20A%20Multi-Layered%20Framework%20Using%20Zero-Knowledge%20Proof%20and%20Permissioned%20Blockchain" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2023</span></b> Paper "Case studies on x-ray imaging, MRI and nuclear imaging" has been accepted for publication in Data Driven Approaches on Medical Imaging  [<a href="https://scholar.google.com/scholar?q=Case%20studies%20on%20x-ray%20imaging%2C%20MRI%20and%20nuclear%20imaging" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
     <hr>
     <li>
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "Prediction of Childhood and Pregnancy Lead Poisoning Using Deep Learning" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=Prediction%20of%20Childhood%20and%20Pregnancy%20Lead%20Poisoning%20Using%20Deep%20Learning" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2023</span></b> Paper "Combating Identity Attacks in Online Social Networks: A Multi-Layered Framework Using Zero-Knowledge Proof and Permissioned Blockchain" has been accepted for publication at the 2023 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (<u>ASONAM</u>)  [<a href="https://scholar.google.com/scholar?q=Combating%20Identity%20Attacks%20in%20Online%20Social%20Networks%3A%20A%20Multi-Layered%20Framework%20Using%20Zero-Knowledge%20Proof%20and%20Permissioned%20Blockchain" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
     <hr>
     <li>
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "Federated Learning-based Contraband Detection within Airport Baggage X-Rays" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=Federated%20Learning-based%20Contraband%20Detection%20within%20Airport%20Baggage%20X-Rays" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2023</span></b> Paper "Prediction of Childhood and Pregnancy Lead Poisoning Using Deep Learning" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=Prediction%20of%20Childhood%20and%20Pregnancy%20Lead%20Poisoning%20Using%20Deep%20Learning" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
     <hr>
     <li>
         <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
-         <b><span class="badge badge1-primary">2024</span></b> Paper "A Novel Hierarchical Federated Learning with Self-Regulated Decentralized Clustering" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=A%20Novel%20Hierarchical%20Federated%20Learning%20with%20Self-Regulated%20Decentralized%20Clustering" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+         <b><span class="badge badge1-primary">2023</span></b> Paper "Federated Learning-based Contraband Detection within Airport Baggage X-Rays" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=Federated%20Learning-based%20Contraband%20Detection%20within%20Airport%20Baggage%20X-Rays" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
+    </li>
+    <hr>
+    <li>
+        <img src="./images/images.png" width="1.7%" height="2%">  &nbsp;
+         <b><span class="badge badge1-primary">2022</span></b> Paper "A Novel Hierarchical Federated Learning with Self-Regulated Decentralized Clustering" has been accepted for publication in the Journal of Computing Sciences in Colleges  [<a href="https://scholar.google.com/scholar?q=A%20Novel%20Hierarchical%20Federated%20Learning%20with%20Self-Regulated%20Decentralized%20Clustering" target="_blank" style="color: #4b7bf5;"><b>Google Scholar</b></a>].
     </li>
 </ul>
 
