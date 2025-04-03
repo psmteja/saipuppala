@@ -280,6 +280,24 @@ body {
             color: #0077b5; /* Change color on hover */
         }
 
+.certs-logo {
+    width: 80px; /* Set a desired width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80px; /* Set a maximum height */
+    object-fit: contain; /* Ensure the image scales properly */
+}
+	
+	.social-icon li {
+            margin: 0; /* Space between icons */
+        }
+		
+		 .social-icon {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: center; /* Center the icons horizontally */
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
 
     </style>
 
@@ -399,13 +417,12 @@ body {
 			<!-- Articles -->
 			<div class="row">
 				<div class="bio">
-            Sai Puppala is a Ph.D. student at Southern Illinois University Carbondale and a member of the Data Science team at a leading corporate organization. His expertise includes Big Data, Machine Learning, Parallel Processing, and Cloud Services. Previously, as a Data Scientist, he contributed to notable projects such as Google Cloud Services.
 
-With extensive experience across various domains—including Financial Services, Retail, Cloud Services, Transportation, and Manufacturing—he holds certifications as a Solutions Architect and Data Engineer. His passion for Big Data and Machine Learning drives him to continuously explore innovations in these fields.
-
-Proficient in multiple programming languages and technologies, Sai's skill set encompasses C, C++, Java, .NET, Python, Hive, Hadoop, Spark, NoSQL, SQL Server, Oracle, R, Impala, HBase, SAS, Tableau, and Perl. He has also earned certifications in Big Data Analytics from esteemed institutions such as Columbia University, MIT, Harvard University, Microsoft, and IIT Hyderabad.
-
-His research focuses on the intersection of Big Data, Networking, Security, and the adaptability of Machine Learning. He aims to address challenges at the convergence of Big Data and Security through advanced Machine Learning and Deep Learning methodologies, ensuring effective real-world applications. ave authored over eighty (30) peer-reviewed publications in reputed journals and top-tier conferences including ACM TSC, Nature Scientific Reports, ANS Transactions, ASONAM, ACM SAC, ICWSM, ACM CHI, ACM WebSci, IEEE DSC, and my research has received media attention from many news outlets including prominent national and international outlets. </p>
+Sai Puppala is a dedicated and innovative Ph.D. student in the Department of Computer Science and Engineering at Southern Illinois University Carbondale, where he is making significant strides at the intersection of Artificial Intelligence (AI), Machine Learning (ML), and cybersecurity. His research is primarily focused on developing robust, adaptive, and secure intelligent systems that address contemporary challenges in cybersecurity and data integrity, particularly in dynamic and resource-constrained environments. As a prominent member of the Data Science team at a leading corporate organization, Sai effectively applies his extensive knowledge and skills in Big Data, Machine Learning, and Cloud Services to solve complex problems across various industries, including Manufacturing, Transportation, and Healthcare. His commitment to enhancing technological advancements is evident in his approach to integrating security measures into intelligent systems, ensuring they are resilient, reliable, and capable of withstanding emerging cyber threats.
+<br/>
+Sai has a remarkable research portfolio, having authored over 30 peer-reviewed publications in prestigious journals and top-tier conferences. His contributions to the field have been showcased at highly regarded events such as the IEEE International Conference on Machine Learning and Applied Network Technologies (ICMLANT), the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), and the IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC). In addition to his research contributions, Sai has gained valuable experience as a Data Scientist, where he played a pivotal role in influential projects, including those associated with Google Cloud Services. His professional journey has equipped him with a rich understanding of data engineering, data processing, and analytics, which he utilizes to develop sophisticated solutions that drive organizational success. Holding certifications as a Solutions Architect and Data Engineer, he possesses the technical acumen necessary to design and implement scalable, efficient, and secure data solutions.
+<br/>
+His versatility enables him to tackle challenges from multiple angles, whether through data analysis, machine learning model development, or software engineering. His research interests are characterized by a profound passion for exploring innovations in the fields of Big Data and Machine Learning. He aims to develop advanced methodologies that address critical challenges related to data security and adaptiveness, ensuring that intelligent systems can effectively respond to the complexities of real-world applications. By employing advanced machine learning and deep learning techniques, Sai seeks to create solutions that not only enhance operational efficiency but also address the pressing issues of data privacy and security in an increasingly interconnected world. Furthermore, Sai’s work has been recognized beyond academic circles, receiving media attention for its relevance and impact on technology and society. His research endeavors have contributed to a broader understanding of how intelligent systems can be designed to be both effective and secure, ultimately enhancing their applicability across various domains. Through his academic and professional pursuits, Sai Puppala exemplifies a commitment to pushing the boundaries of knowledge and application in AI, Machine Learning, and cybersecurity. As he continues his doctoral studies, he remains devoted to exploring innovative solutions that tackle challenges at the convergence of Big Data and security, ensuring the development of resilient, adaptive, and secure intelligent systems for the future. </p>
             </div>
 			</div>
 			
@@ -551,8 +568,8 @@ His research focuses on the intersection of Big Data, Networking, Security, and 
 
 	  <!-- Right Column -->
 	  <div class="col-sm-3">
-
-			<!-- Text Panel -->
+	  
+	  <!-- Text Panel -->
 			<div class="card">
 				<div class="card-header p-b-0">
 					<h5 class="card-title"><i class="fa fa-quote-left" aria-hidden="true"></i> AI Quote</h5>
@@ -562,6 +579,25 @@ His research focuses on the intersection of Big Data, Networking, Security, and 
 					<p class="card-text">“Artificial Intelligence is the new electricity; it's a partner in our quest for progress, transforming our dreams into reality and unlocking the potential of human creativity.." – Andrew Ng</p>
 				</div>
 			</div>
+	  
+	  <!-- Text Panel -->
+			<div class="card">
+				<div class="card-header p-b-0">
+					<h5 class="card-title">Certified Badges</h5>
+				</div>
+
+				<div class="card-block">
+					<ul class="social-icon">
+					<li><img src="images/databricks-b.png" alt="databricks badge" class="certs-logo" onclick="openModal('images/databricks-b.png')"></li>
+					<li><img src="images/badge.png" alt="Badge" class="certs-logo" onclick="openModal('images/badge.png')"></li>
+					<li><img src="images/aws-sl.png" alt="AWS SA" class="certs-logo" onclick="openModal('images/aws-sl.png')"></li>
+					<li><img src="images/aws-ml.png" alt="AWS ML" class="certs-logo" onclick="openModal('images/aws-ml.png')"></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
 			<!-- Form --> 
 			<div class="card">
 				<div class="card-header p-b-0">
