@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
    <head>
@@ -115,7 +114,7 @@
 .custom-header {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Vertically center items */
-    background-color: #720000; /* Light background */
+    background-color: #182952; /* Light background */
     border: none; /* Remove default border */
     border-bottom: 1px solid green; /* Add a green bottom border */
     padding: 0; /* Decrease top and bottom padding to reduce height */
@@ -128,11 +127,12 @@
     display: flex; /* Use flex to align logo and text */
     align-items: center; /* Center items vertically */
     margin-right: auto; /* Push navbar to the right */
+	margin-left: 25px;
 }
 
 .custom-header .navbar-brand img {
-    height: 62px; /* Adjust logo height */
-    width: 100%; /* Maintain aspect ratio */
+    height: 42px; /* Adjust logo height */
+    width: 110%; /* Maintain aspect ratio */
 }
 
 .custom-header .navbar-nav {
@@ -186,7 +186,7 @@
 }
 
 .navbar-nav li.active-new a {
-   background-color: #720000; /* Change to desired highlight color */
+   background-color: #182952; /* Change to desired highlight color */
 	color: yellow;
 	height: 50px; /* Set the desired height */
     line-height: 50px; /* Center text vertically */
@@ -348,14 +348,14 @@ body {
 					<img class="img-responsive" alt="Sai Puppala" src="images/profile.jpg" width="100%" />
 					</h5>
 				</div>
-				<h5 style="text-align: center;"><strong><i>Sai Puppala</i></strong></h5>
+				<h5 style="text-align: center;"><strong>Sai Puppala, Ph.D.</strong></h5>
 				<div class="card-text">
-					<b>Senior Research Engineer/Ph.D Student</b>
-					<br><a href="https://www.cs.utep.edu/stalukder/supremelab/"><b>S</b>ec<b>u</b>rity and <b>Pr</b>ivacy <b>E</b>nhanced <b>M</b>achine L<b>e</b>arning Lab</a>
-                     <br>Engineering A0407, School of Computing
-                     <br>Southern Illinois University
-                     <br><i class="fa fa-phone" aria-hidden="true"></i> (618) 453-6059
-                     <br><i class="fa fa-envelope" aria-hidden="true"></i> <a href="https://www2.cs.siu.edu/~stalukder/mailto:saimaniteja.puppala@siu.edu">saimaniteja.puppala@siu.edu</a>
+					<b>Assistant Professor</b>
+<!--					<br><a href="https://www.cs.utep.edu/stalukder/supremelab/"><b>S</b>ec<b>u</b>rity and <b>Pr</b>ivacy <b>E</b>nhanced <b>M</b>achine L<b>e</b>arning Lab</a>-->
+                     <br>Cramer 226, Computer Science and Engineering
+                     <br>New Mexico Institute of Mining and Technology
+                     <br><i class="fa fa-phone" aria-hidden="true"></i> (575) 835-5194
+                     <br><i class="fa fa-envelope" aria-hidden="true"></i> <a href="https://www2.cs.siu.edu/~stalukder/mailto:sai.puppala@nmt.edu">sai.puppala@nmt.edu</a>
 
 				</div>
 				<hr>
@@ -383,21 +383,25 @@ body {
 				<div class="card-block">
 					<ul>
     <li>
-        <p><strong>Social Networks - </strong>
-        AI and machine learning can significantly enhance the user experience within social networks. Given our daily reliance on various social platforms, user-generated posts, comments, and reactions serve as valuable resources for research purposes. Investigating social networks can lead to innovative insights into user data security and privacy, ultimately delivering novel user experiences.</p>
+        <p><strong>Federated Learning - </strong>
+        Federated learning trains machine learning models across many devices or institutions without centralizing raw data. Each participant trains locally and shares only model updates, which keeps sensitive data where it originated. My research covers privacy-preserving aggregation, robustness to heterogeneous and non-IID data, communication efficiency, and defenses against malicious participants. The goal is collaborative AI that is both effective and respectful of data ownership.</p>
     </li>
-	<hr>
+    <hr>
     <li>
-        <p><strong>Health Care - </strong>
-        AI has the ability to analyze big data sets – pulling together patient insights and leading to predictive analysis. Quickly obtaining patient insights helps the healthcare ecosystem discover key areas of patient care that require improvement. Wearable healthcare technology also uses AI to better serve patients.</p>
+        <p><strong>Agentic AI and Multi-Agent Systems - </strong>
+        Agentic AI systems plan, reason, use tools, and take actions toward goals with limited human supervision. When multiple agents interact, they can cooperate, negotiate, or compete, which creates new capabilities and new risks. I study how to design, coordinate, and evaluate such agents. My focus is on reliability, accountability, and secure communication between agents operating in open environments.</p>
     </li>
-	<hr>
+    <hr>
     <li>
-        <p><strong>Security Enhancements - </strong>
-        AI uses machine learning and deep learning to recognize patterns on the network and cluster them; it will then detect deviations or security incidents from the norm before responding to them. These patterns can help to improve security in the future. Similar potential threats can be detected and blocked early enough.</p>
+        <p><strong>Robust and Trustworthy AI - </strong>
+        For AI to be adopted responsibly, it must be reliable, transparent, and fair. I explore methods that improve model robustness to distribution shift and noise, quantify uncertainty, and provide interpretable explanations for decisions. This work aims to build AI systems that users and stakeholders can understand, verify, and trust.</p>
+    </li>
+    <hr>
+    <li>
+        <p><strong>Quantum Cryptography - </strong>
+        Quantum computing threatens many of today's widely used cryptographic schemes. Quantum mechanics also enables new forms of secure communication, such as quantum key distribution. I study quantum-secure protocols, post-quantum cryptographic approaches, and their integration with AI-driven systems. This work aims to protect data and communications against both classical and quantum adversaries.</p>
     </li>
 </ul>
-
 				</div>
 			</div>
 
@@ -417,13 +421,16 @@ body {
 			<!-- Articles -->
 			<div class="row">
 				<div class="bio">
-
-Sai Puppala is a dedicated and innovative Ph.D. student in the Department of Computer Science and Engineering at Southern Illinois University Carbondale, where he is making significant strides at the intersection of Artificial Intelligence (AI), Machine Learning (ML), and cybersecurity. His research is primarily focused on developing robust, adaptive, and secure intelligent systems that address contemporary challenges in cybersecurity and data integrity, particularly in dynamic and resource-constrained environments. As a prominent member of the Data Science team at a leading corporate organization, Sai effectively applies his extensive knowledge and skills in Big Data, Machine Learning, and Cloud Services to solve complex problems across various industries, including Manufacturing, Transportation, and Healthcare. His commitment to enhancing technological advancements is evident in his approach to integrating security measures into intelligent systems, ensuring they are resilient, reliable, and capable of withstanding emerging cyber threats.
-<br/>
-Sai has a remarkable research portfolio, having authored over 40 peer-reviewed publications in prestigious journals and top-tier conferences. His contributions to the field have been showcased at highly regarded events such as the IEEE International Conference on Machine Learning and Applied Network Technologies (ICMLANT), the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), and the IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC). In addition to his research contributions, Sai has gained valuable experience as a Data Scientist, where he played a pivotal role in influential projects, including those associated with Google Cloud Services. His professional journey has equipped him with a rich understanding of data engineering, data processing, and analytics, which he utilizes to develop sophisticated solutions that drive organizational success. Holding certifications as a Solutions Architect and Data Engineer, he possesses the technical acumen necessary to design and implement scalable, efficient, and secure data solutions.
-<br/>
-His versatility enables him to tackle challenges from multiple angles, whether through data analysis, machine learning model development, or software engineering. His research interests are characterized by a profound passion for exploring innovations in the fields of Big Data and Machine Learning. He aims to develop advanced methodologies that address critical challenges related to data security and adaptiveness, ensuring that intelligent systems can effectively respond to the complexities of real-world applications. By employing advanced machine learning and deep learning techniques, Sai seeks to create solutions that not only enhance operational efficiency but also address the pressing issues of data privacy and security in an increasingly interconnected world. Furthermore, Sai’s work has been recognized beyond academic circles, receiving media attention for its relevance and impact on technology and society. His research endeavors have contributed to a broader understanding of how intelligent systems can be designed to be both effective and secure, ultimately enhancing their applicability across various domains. Through his academic and professional pursuits, Sai Puppala exemplifies a commitment to pushing the boundaries of knowledge and application in AI, Machine Learning, and cybersecurity. As he continues his doctoral studies, he remains devoted to exploring innovative solutions that tackle challenges at the convergence of Big Data and security, ensuring the development of resilient, adaptive, and secure intelligent systems for the future. </p>
-            </div>
+<p>
+Sai Puppala is an Assistant Professor in the Computer Science and Engineering at New Mexico Tech. His research sits at the intersection of Artificial Intelligence (AI), Machine Learning (ML), and cybersecurity, and focuses on developing robust, adaptive, and secure intelligent systems. His current interests include federated learning, agentic AI and multi-agent systems, adversarial machine learning and LLM safety, robust and trustworthy AI, applied AI for safety-critical systems, and quantum cryptography. He earned his Ph.D. in Computer Science and Engineering from Southern Illinois University Carbondale.
+<br/><br/>
+Sai has authored over 60 peer-reviewed publications in prestigious journals and top-tier conferences. His work has appeared at highly regarded venues including the NeurIPS, PETS, AAAI, ICMLA, ICWSM, the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM), and the IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC). His research has also received media attention for its relevance and impact on technology and society.
+<br/><br/>
+Before joining the faculty, Sai worked as a Research Engineering for many fortune 100 companies. In that role, he applied his expertise in Big Data, Machine Learning, and Cloud Services to complex problems in Manufacturing, Transportation, and Healthcare, and contributed to influential projects, including some involving Google Cloud Services. He holds certifications as a Machine Learning, Solutions Architect and Data Engineer. This industry experience gives him a strong foundation in data engineering, data processing, and analytics, and it informs his focus on building scalable, efficient, and secure solutions.
+<br/><br/>
+Combining academic research with practical industry experience, Sai approaches problems through data analysis, machine learning model development, and software engineering. He is dedicated to advancing methods that address data security, privacy, and adaptiveness. His goal is intelligent systems that remain resilient, reliable, and trustworthy against emerging threats in an increasingly interconnected world. As an Assistant Professor, he is committed to mentoring students, fostering interdisciplinary collaboration, and pushing the boundaries of knowledge and application in AI and cybersecurity.
+</p>
+</div>
 			</div>
 			
 			
@@ -435,10 +442,15 @@ His versatility enables him to tackle challenges from multiple angles, whether t
 				
 <!-- 				<div class="list-item"><i class="fa fa-newspaper-o" aria-hidden="true"></i> <b>Journal paper published in JCR Q1 Agriculture</b> venue got featured as a news article on <b><span style="color: #3A5C2D;">Devdiscourse</span></b>, a major international news platform.</div>
  -->
-				
+				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Two</b> of our papers got accepted for CS top conference <b><span style="color: #3A5C2D;"> NeurIPS 2026</span></b><span class="badge badge-primary">Acceptance Rate: <b>15%</b></span></div>
+				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Four</b> of our papers got accepted for CS reputed conference <b><span style="color: #3A5C2D;"> AAAI 2026</span></b></div>
+
+				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>One</b> of my paper got accepted for top journal in agriculture field at<b><span style="color: #3A5C2D;"> Agronomy </span></b><span class="badge badge-primary">GScholar Rank: <b>2</b></span></div>
+
 				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Six</b> of our papers got accepted for top journal <b><span style="color: #3A5C2D;"> American Nuclear Society </span></b></div> 
-				
-				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>One</b> of my paper got accepted for top journal in agriculture field at<b><span style="color: #3A5C2D;"> MDPI Agriculture </span></b><span class="badge badge-primary">Impact Factor: <b>3.8</b></span></div> 
+
+
+				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>One</b> of my paper got accepted for top journal in agriculture field at<b><span style="color: #3A5C2D;"> Agriculture </span></b><span class="badge badge-primary">GScholar Rank: <b>3</b></span></div>
 				
 				
 				<div class="list-item"><i class="fa fa-space-shuttle" aria-hidden="true"></i> <b>Awarded</b> grant writing certificate from Center for Continuing Education At<b><span style="color: #3A5C2D;"> University of Georgia</span></b></div> 
@@ -520,7 +532,7 @@ His versatility enables him to tackle challenges from multiple angles, whether t
 
 
 			      
-
+The skill to adjust the speed of a lesson dynamically so every student catches up without losing interest
 			
   
 			
@@ -529,9 +541,20 @@ His versatility enables him to tackle challenges from multiple angles, whether t
 			<div class="row">
 				<h5>Professional Experience</h5>
             <ul class="timeline">
+				    <li>
+    <div class="content">
+        <b>Assistant Professor</b> (2026 - Current)<br><span class="duration"></span>
+        <div>
+            Technologies: Federated Learning, Agentic AI, Quantum Cryptography.<br>
+			New Mexico Tech, U.S.<br>
+            Domain: Education and Research.
+        </div>
+    </div>
+</li>
+<hr>
     <li>
     <div class="content">
-        <b>Senior Research Software Engineer</b> (2021 - Current)<br><span class="duration"></span>
+        <b>Senior Research Engineer</b> (2021 - 2026)<br><span class="duration"></span>
         <div>
             Technologies: Generative AI, Machine Learning, Security and Privacy, Big Data.<br>
 			John Deere, U.S.<br>
@@ -542,7 +565,7 @@ His versatility enables him to tackle challenges from multiple angles, whether t
 <hr>
 <li>
     <div class="content">
-        <b>Research Software Engineer</b> (2020 - 2021)<br><span class="duration"></span>
+        <b>Research Engineer</b> (2020 - 2021)<br><span class="duration"></span>
         <div>
             Technologies: Data Engineering, Data Processing, Visualizations, Automations.<br>
 			Vertava Health, U.S.<br>
@@ -835,17 +858,4 @@ function myFunction() {
 }
 </script>
 
-<div style="width:300px; height:200px; border:1px solid #ccc; overflow:hidden;">
-  <script 
-    type="text/javascript" 
-    id="mapmyvisitors" 
-    src="//mapmyvisitors.com/map.js?d=jCt-krlQsON1KUkPLxsnHOwoeSLTWE63erUP026Y1MU&cl=ffffff&w=a">
-  </script>
-</div>
-</body>
-
 </html>
-
-
-
-
